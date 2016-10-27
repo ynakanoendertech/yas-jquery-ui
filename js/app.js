@@ -5,11 +5,18 @@ requirejs.config({
     paths: {
         jquery: 'node_modules/jquery/dist/jquery',
         lib: 'js/lib',
-        app: 'js/app'
+        app: 'js/app',
+        nonDefine: 'js/non-define'
+    },
+    shim: {
+        nonDefine: {
+            depts: ['jquery'],
+            exports: 'NonDefine'
+        }
     }
 });
 
-requirejs(['jquery', 'lib/canvas', 'app/sub'], function($, canvas, sub) {
+requirejs(['jquery', 'lib/canvas', 'app/sub', 'nonDefine'], function($, canvas, sub, NonDefine) {
 
     console.dir($('body'));
 
@@ -18,4 +25,7 @@ requirejs(['jquery', 'lib/canvas', 'app/sub'], function($, canvas, sub) {
 
     var sub = new sub('abc');
     console.dir(sub);
+
+    var nonDefine = new NonDefine('Bobcat');
+    console.dir(nonDefine);
 });
