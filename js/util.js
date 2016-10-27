@@ -1,8 +1,11 @@
-define(function() {
+define(["js/name.js"], function(Name) {
 
     "use strict";
 
-    return function Util(name) {
-        this.name = name;
-    }
+    var Util = [];
+
+    Util.push(new Name('Yas'));
+    Util.push(new Name('Bobcat'));
+
+    return { util: Util };
 });
