@@ -1,8 +1,6 @@
 "use strict";
 
-requirejs(["js/util.js"], function() {
-  console.log("main.js");
+requirejs(["js/util.js"], function(Util) {
 
-  console.dir(define.amd);
+    console.dir(Util);
 });
-
