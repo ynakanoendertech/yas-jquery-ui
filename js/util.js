@@ -1,4 +1,8 @@
-"use strict";
+define(function() {
 
-console.log("util.js");
+    "use strict";
 
+    return function Util(name) {
+        this.name = name;
+    }
+});

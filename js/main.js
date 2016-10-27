@@ -1,8 +1,10 @@
 "use strict";
 
-requirejs(["js/util.js"], function() {
-  console.log("main.js");
+requirejs(["js/util.js"], function(Util) {
 
-  console.dir(define.amd);
+    var util = [];
+
+    util.push(new Util('Yas'));
+
+    console.dir(util);
 });
-
