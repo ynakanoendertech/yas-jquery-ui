@@ -2,5 +2,7 @@
 
 requirejs(["js/util.js"], function() {
   console.log("main.js");
+
+  console.dir(define.amd);
 });
 
