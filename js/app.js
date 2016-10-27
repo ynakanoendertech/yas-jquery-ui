@@ -1,21 +1,5 @@
 "use strict";
 
-requirejs.config({
-    baseUrl: '.',
-    paths: {
-        jquery: 'node_modules/jquery/dist/jquery',
-        lib: 'js/lib',
-        app: 'js/app',
-        nonDefine: 'js/non-define'
-    },
-    shim: {
-        nonDefine: {
-            depts: ['jquery'],
-            exports: 'NonDefine'
-        }
-    }
-});
-
 requirejs(['jquery', 'lib/canvas', 'app/sub', 'nonDefine'], function($, canvas, sub, NonDefine) {
 
     console.dir($('body'));
