@@ -20,5 +20,6 @@ requirejs(
     console.dir(simple);
 
     var defFuncWithDep = DefFuncWithDep;
+    defFuncWithDep.increaseAge();
     console.dir(defFuncWithDep);
 });
