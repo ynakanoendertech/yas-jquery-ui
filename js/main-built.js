@@ -1,1 +1,0 @@
-define("js/name.js",[],function(){"use strict";return function(n){this.name=n}}),define("js/util.js",["js/name.js"],function(n){"use strict";var s=[];return s.push(new n("Yas")),s.push(new n("Bobcat")),{util:s}}),requirejs(["js/util.js"],function(n){console.dir(n)}),define("js/main",function(){});

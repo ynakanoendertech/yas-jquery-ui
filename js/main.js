@@ -1,6 +1,4 @@
 "use strict";
 
-requirejs(["js/util.js"], function(Util) {
+console.log(123);
 
-    console.dir(Util);
-});

@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <title>jQuery UI and RquireJS</title>
     <link rel="stylesheet" href="css/style.css">
-    <script data-main="js/main-built" src="node_modules/requirejs/require.js" async></script>
+    <script src="node_modules/requirejs/require.js"></script>
+    <script>
+        require(['js/config'], function() {
+
+            // Configuration loaded, safe to do other require calls
+
+            // Load app.js
+            require(['js/app'], function(app){});
+        });
+    </script>
 </head>
 <body>
     <div class="test">Test</div>
