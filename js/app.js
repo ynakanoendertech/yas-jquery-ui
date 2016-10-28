@@ -1,8 +1,8 @@
 "use strict";
 
 requirejs(
-    ['jquery', 'lib/canvas', 'app/sub', 'nonDefine', 'module/simple', 'module/definition-function'],
-    function($, canvas, sub, NonDefine, Simple, DefFunc) {
+    ['jquery', 'lib/canvas', 'app/sub', 'nonDefine', 'module/simple', 'module/definition-function-with-dependency'],
+    function($, canvas, sub, NonDefine, Simple, DefFuncWithDep) {
 
     var test = $('.test');
     console.dir(test);
@@ -19,6 +19,6 @@ requirejs(
     var simple = Simple;
     console.dir(simple);
 
-    var defFunc = DefFunc;
-    console.dir(defFunc);
+    var defFuncWithDep = DefFuncWithDep;
+    console.dir(defFuncWithDep);
 });
