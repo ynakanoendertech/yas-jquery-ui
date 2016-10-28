@@ -1,8 +1,16 @@
 "use strict";
 
 requirejs(
-    ['jquery', 'lib/canvas', 'app/sub', 'nonDefine', 'module/simple', 'module/definition-function-with-dependency'],
-    function($, canvas, sub, NonDefine, Simple, DefFuncWithDep) {
+    [
+        'jquery',
+        'lib/canvas',
+        'app/sub',
+        'nonDefine',
+        'module/simple',
+        'module/definition-function-with-dependency',
+        'module/module-as-function'
+    ],
+    function($, canvas, sub, NonDefine, Simple, DefFuncWithDep, ModAsFunc) {
 
     var test = $('.test');
     console.dir(test);
@@ -22,4 +30,7 @@ requirejs(
     var defFuncWithDep = DefFuncWithDep;
     defFuncWithDep.increaseAge();
     console.dir(defFuncWithDep);
+
+    var modAsFunc = new ModAsFunc();
+    console.dir(modAsFunc);
 });
