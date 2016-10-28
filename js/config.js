@@ -14,5 +14,16 @@ requirejs.config({
             depts: ['jquery'],
             exports: 'NonDefine'
         }
+    },
+    map: {
+        'module/module-as-function': {
+            'module/simple': 'module/simple-2'
+        }
+    },
+    config: {
+        'module/simple-2': {
+            max_size: 'XXXL',
+            base_color: 'lightgreen'
+        }
     }
 });
