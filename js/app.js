@@ -2,5 +2,8 @@
 
 requirejs(['jquery', 'jqueryUi'], function($, jqueryUi) {
 
-    console.log(123);
+    $(document).ready(function() {
+
+        $("#dialog").dialog();
+    });
 });
