@@ -1,0 +1,46 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI and RquireJS</title>
+    <link rel="stylesheet" href="node_modules/jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node_modules/requirejs/require.js"></script>
+    <script>
+        require(['js/config'], function() {
+
+            // Configuration loaded, safe to do other require calls
+
+            // Load app.js
+            require(['js/app'], function(app){});
+        });
+    </script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/config" src="./js/config.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/app" src="./js/app.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryUi" src="./node_modules/jqueryui/jquery-ui.js"></script>
+</head>
+<body style="cursor: auto;">
+
+    <div class="test">Test</div>
+
+    <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" tabindex="-1" role="dialog" style="position: absolute; height: auto; width: 300px; left: 56px; top: 34px;" aria-describedby="dialog" aria-labelledby="ui-id-1">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle">
+            <span id="ui-id-1" class="ui-dialog-title">Basic dialog</span>
+            <button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close">
+                <span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span>
+            </button>
+        </div>
+        <div id="dialog" class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 82.8125px; max-height: none; height: auto;">
+            <p>This is the default dialog which is useful for displaying information.</p>
+        </div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+    </div>
+</body>
+</html>
